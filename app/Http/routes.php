@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::controllers([
+    'users'     =>  'UsersController',
+    'auth'      =>  'Auth\AuthController',
+    'password'  =>  'Auth\PasswordController',
+]);
