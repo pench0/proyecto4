@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP Runtime" type="php">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHP" type="php">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/barryvdh/laravel-debugbar" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/classpreloader/classpreloader" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/danielstjules/stringy" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/dnoegel/php-xdg-base-dir" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/hamcrest/hamcrest-php" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/intervention/image" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/jakub-onderka/php-console-color" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/jakub-onderka/php-console-highlighter" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/jeremeamia/SuperClosure" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/laravel/framework" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/laravelcollective/html" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/league/flysystem" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/maximebf/debugbar" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/mockery/mockery" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/mtdowling/cron-expression" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/nesbot/carbon" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/nikic/php-parser" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/paragonie/random_compat" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpdocumentor/reflection-docblock" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpspec/php-diff" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpspec/phpspec" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpspec/prophecy" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-code-coverage" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-file-iterator" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-text-template" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-timer" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/phpunit" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/psy/psysh" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/comparator" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/diff" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/environment" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/exporter" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/global-state" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/recursion-context" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/version" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/css-selector" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/dom-crawler" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/event-dispatcher" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/finder" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/http-foundation" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/http-kernel" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/polyfill-php56" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/polyfill-util" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/process" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/routing" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/translation" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/var-dumper" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/vlucas/phpdotenv" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/barryvdh/laravel-debugbar" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/classpreloader/classpreloader" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/danielstjules/stringy" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/dnoegel/php-xdg-base-dir" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/hamcrest/hamcrest-php" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/intervention/image" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/jakub-onderka/php-console-color" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/jakub-onderka/php-console-highlighter" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/jeremeamia/SuperClosure" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/laravel/framework" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/laravelcollective/html" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/league/flysystem" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/maximebf/debugbar" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/mockery/mockery" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/mtdowling/cron-expression" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/nesbot/carbon" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/nikic/php-parser" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/paragonie/random_compat" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpdocumentor/reflection-docblock" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpspec/php-diff" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpspec/phpspec" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpspec/prophecy" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-code-coverage" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-file-iterator" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-text-template" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-timer" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/phpunit" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/psy/psysh" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/comparator" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/diff" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/environment" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/exporter" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/global-state" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/recursion-context" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/sebastian/version" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/css-selector" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/dom-crawler" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/event-dispatcher" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/finder" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/http-foundation" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/http-kernel" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/polyfill-php56" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/polyfill-util" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/process" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/routing" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/translation" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/var-dumper" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/../blogjunio/vendor/vlucas/phpdotenv" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
