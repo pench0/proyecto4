@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="proyecto4@127.0.0.1">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="proyecto4">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="academia"/>
+    <schema id="4" parent="1" name="basic_blog"/>
+    <schema id="5" parent="1" name="blog"/>
+    <schema id="6" parent="1" name="blogjunio"/>
+    <schema id="7" parent="1" name="foro"/>
+    <schema id="8" parent="1" name="foro_tests"/>
+    <schema id="9" parent="1" name="homestead"/>
+    <schema id="10" parent="1" name="homesteadDWES51"/>
+    <schema id="11" parent="1" name="homesteadDWES52"/>
+    <schema id="12" parent="1" name="homesteadDWES7"/>
+    <schema id="13" parent="1" name="homesteadPractica7"/>
+    <schema id="14" parent="1" name="homesteadProyecto51"/>
+    <schema id="15" parent="1" name="homesteadProyecto52"/>
+    <schema id="16" parent="1" name="information_schema"/>
+    <schema id="17" parent="1" name="laravel5_1"/>
+    <schema id="18" parent="1" name="mysql"/>
+    <schema id="19" parent="1" name="performance_schema"/>
+    <schema id="20" parent="1" name="phpmyadmin"/>
+    <schema id="21" parent="1" name="proyecto"/>
+    <schema id="22" parent="1" name="proyecto3"/>
+    <schema id="23" parent="1" name="sys"/>
+    <schema id="24" parent="1" name="teachme"/>
+    <schema id="25" parent="1" name="teachme_tests"/>
+  </database-model>
+</dataSource>
