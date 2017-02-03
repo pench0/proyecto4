@@ -29,5 +29,123 @@
     <schema id="23" parent="1" name="sys"/>
     <schema id="24" parent="1" name="teachme"/>
     <schema id="25" parent="1" name="teachme_tests"/>
+    <table id="26" parent="2" name="migrations"/>
+    <table id="27" parent="2" name="user_profiles"/>
+    <table id="28" parent="2" name="users"/>
+    <column id="29" parent="26" name="migration">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="26" name="batch">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="27" name="biograph">
+      <Position>2</Position>
+      <DataType>mediumtext|0</DataType>
+    </column>
+    <column id="33" parent="27" name="website">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="34" parent="27" name="twitter">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="35" parent="27" name="birthdate">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="36" parent="27" name="user_id">
+      <Position>6</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="27" name="created_at">
+      <Position>7</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="38" parent="27" name="updated_at">
+      <Position>8</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <index id="39" parent="27" name="user_profiles_user_id_foreign">
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="40" parent="27" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="41" parent="27" name="user_profiles_user_id_foreign">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>proyecto4</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="42" parent="28" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="43" parent="28" name="firstName">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="28" name="lastName">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="28" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="28" name="email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="28" name="token">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="28" name="rol">
+      <Position>7</Position>
+      <DataType>enum(&apos;Administrador&apos;, &apos;Profesor&apos;, &apos;AlumnoESO&apos;, &apos;AlumnoBach&apos;, &apos;AlumnoFP&apos;)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="28" name="created_at">
+      <Position>8</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="50" parent="28" name="updated_at">
+      <Position>9</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <index id="51" parent="28" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="28" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="53" parent="28" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>

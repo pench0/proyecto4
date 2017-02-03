@@ -23,4 +23,19 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function getFullNameAttribute()
+    {
+        return $this->firstName . ' ' . $this->lastName;
+    }
+
+    public function getAgeAttribute()
+    {
+        return \Carbon\Carbon::parse($this->birthdate)->age;
+    }
+
+    public function profile()
+    {
+        return $this->hasOne('App\UserProfile');
+    }
 }
