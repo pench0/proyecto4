@@ -27,7 +27,7 @@ class UsersController extends Controller
 
     public function getOrm()
     {
-        $user = User::find(5);
-        dd($user->profile);
+        $user = User::find(10);
+        dd($user->profile->age);
     }
 }
