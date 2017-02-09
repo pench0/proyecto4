@@ -20,3 +20,12 @@ Route::controllers([
     'auth'      =>  'Auth\AuthController',
     'password'  =>  'Auth\PasswordController',
 ]);
+
+Route::get('example', function() {
+    $user = 'Pepe';
+    return view('examples.template',compact('user'));
+});
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

@@ -27,7 +27,12 @@ class UsersController extends Controller
 
     public function getOrm()
     {
-        $user = User::find(10);
-        dd($user->profile->age);
+        $user = User::select('id','firstName','lastName')
+                ->with('profile')
+                ->where('firstName','<>','Pepe')
+                ->where('lastName','like','%e%e%')
+                ->orderBy('lastName','ASC')
+                ->get();
+        dd($user->toArray());
     }
 }
