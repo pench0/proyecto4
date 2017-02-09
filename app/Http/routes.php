@@ -21,11 +21,15 @@ Route::controllers([
     'password'  =>  'Auth\PasswordController',
 ]);
 
-Route::get('example', function() {
-    $user = 'Pepe';
-    return view('examples.template',compact('user'));
-});
-
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'],
+    function() {
+
+    Route::resource('users', 'UsersController');
+
+});
+
