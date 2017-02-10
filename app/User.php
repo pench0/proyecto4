@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstName', 'lastName', 'email', 'password',
+        'firstName', 'lastName', 'email', 'password', 'rol'
     ];
 
     /**
@@ -32,5 +32,12 @@ class User extends Authenticatable
     public function profile()
     {
         return $this->hasOne('App\UserProfile');
+    }
+
+    public function setPasswordAttribute($value)
+    {
+        if (!empty($value)){
+            $this->attributes['password'] = bcrypt($value);
+        }
     }
 }
