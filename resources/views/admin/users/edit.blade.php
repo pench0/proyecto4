@@ -8,6 +8,9 @@
                     <div class="panel-heading">Editar usuario: {{ $user->fullName }}</div>
 
                     <div class="panel-body">
+
+                        @include('admin.users.partials.messages')
+
                         {{ Form::model($user, [
                                 'route' => ['admin.users.update', $user->id],
                                 'method' => 'put']

@@ -8,6 +8,9 @@
                     <div class="panel-heading">Crear un Usuario</div>
 
                     <div class="panel-body">
+
+                        @include('admin.users.partials.messages')
+
                         {{ Form::open([
                                 'route' => 'admin.users.store',
                                 'method' => 'post']
