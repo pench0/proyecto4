@@ -3,9 +3,16 @@
 namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
+use Illuminate\Routing\Route;
 
 class UpdateUserRequest extends Request
 {
+    protected $route;
+
+    public function __construct(Route $route)
+    {
+        $this->route = $route;
+    }
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -26,8 +33,9 @@ class UpdateUserRequest extends Request
         return [
             'firstName' =>  'required',
             'lastName'  =>  'required',
-            'email'     =>  'required',
-            'rol'       =>  'required'
+            'email'     =>  'required|unique:users,email,' .
+                        $this->route->getParameter('users'),
+            'rol'       =>  'required|in:Administrador,Profesor,AlumnoESO,AlumnoBach,AlumnoFP'
         ];
     }
 }
