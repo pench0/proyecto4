@@ -6,13 +6,13 @@
         <th>Acciones</th>
     </tr>
     @foreach($users as $user)
-        <tr>
+        <tr data-id="{{ $user->id }}">
             <td>{{ $user->id }}</td>
             <td>{{ $user->fullName }}</td>
             <td>{{ $user->email }}</td>
             <td>
                 <a href="{{ route('admin.users.edit', $user) }}">Editar</a>
-                <a href="">Borrar</a>
+                <a href="" class="btn-delete">Borrar</a>
             </td>
         </tr>
     @endforeach

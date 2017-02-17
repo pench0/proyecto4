@@ -18,6 +18,7 @@
                         @include('admin.users.partials.fields')
                         <button type="submit" class="btn btn-default">Actualizar usuario</button>
                         {{ Form::close() }}
+                        @include('admin.users.partials.delete')
                     </div>
                 </div>
             </div>

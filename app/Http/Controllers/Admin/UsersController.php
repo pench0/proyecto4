@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateUserRequest;
+use Illuminate\Support\Facades\Session;
 
 class UsersController extends Controller
 {
@@ -45,6 +46,28 @@ class UsersController extends Controller
         $user->fill($request->all());
         $user->save();
         return redirect()->route('admin.users.index');
+    }
+
+    public function destroy($id, Request $request)
+    {
+
+        $user = User::findOrFail($id);
+
+        $user->delete();
+
+        $message = $user->fullName . ' ha sido eliminado de nuestros registros';
+
+        if ($request->ajax()) {
+            return response()->json([
+                'id'        =>  $user->id,
+                'message'   =>  $message
+            ]);
+        }
+
+        Session::flash('message', $message);
+
+        return redirect()->route('admin.users.index');
+
     }
 
 }
