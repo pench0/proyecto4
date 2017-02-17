@@ -16,14 +16,10 @@
 </div>
 <div class="form-group">
     {{ Form::label('rol','User Role') }}
-    {{ Form::select('rol', [
-                            '' => 'Select Role',
-                            'Administrador' => 'Administrador',
-                            'Profesor'      => 'Profesor',
-                            'AlumnoESO'     => 'Alumno de la ESO',
-                            'AlumnoBach'    => 'Alumno de Bachillerato',
-                            'AlumnoFP'      => 'Alumno de FP'],
-                            null,
-                            ['class' => 'form-control']
-                    ) }}
+    {{ Form::select('rol',
+                    config('options.rol'),
+                    null,
+                    ['class' => 'form-control']
+                    )
+    }}
 </div>

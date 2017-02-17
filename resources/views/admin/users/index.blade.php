@@ -14,11 +14,24 @@
                     @endif
 
                     <div class="panel-body">
+
+                        {{ Form::model($request->only(['name','rol']), ['route' => 'admin.users.index',
+                                       'method' => 'GET',
+                                       'class' => 'navbar-form navbar-left pull-right',
+                                       'role'  => 'search']) }}
+                            <div class="form-group">
+                                {{ Form::text('name', null, ['class' => 'form-control',
+                                                'placeholder' => 'Nombre de Usuario']) }}
+                                {{ Form::select('rol', config('options.rol'), null, ['class' => 'form-control']) }}
+                            </div>
+                            <button type="submit" class="btn btn-default">Buscar</button>
+                        {{ Form::close() }}
+
                         <a class="btn btn-info" href="{{ route('admin.users.create') }}">
                             Crear Usuario
                         </a>
                         @include('admin.users.partials.table')
-                        {{ $users->render() }}
+                        {{ $users->appends($request->only(['name','rol']))->render() }}
                     </div>
                 </div>
             </div>

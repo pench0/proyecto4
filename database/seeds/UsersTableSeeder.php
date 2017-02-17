@@ -44,7 +44,7 @@ class UsersTableSeeder extends Seeder
 
         $faker = Faker::create('es_ES');
 
-        for ($i=0; $i<100; $i++) {
+        for ($i=0; $i<500; $i++) {
             $id = \DB::table('users')->insertGetId([
                 'firstName' =>  $faker->firstName,
                 'lastName'  =>  $faker->lastName,

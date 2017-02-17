@@ -40,4 +40,19 @@ class User extends Authenticatable
             $this->attributes['password'] = bcrypt($value);
         }
     }
+
+    public function scopeName($query, $name)
+    {
+        if (trim($name) != "") {
+            $query->where(\DB::raw("CONCAT(firstName,' ',lastName)"), "LIKE", "%$name%");
+        }
+    }
+
+    public function scopeRol($query, $rol)
+    {
+        $roles = config('options.rol');
+        if ($rol != '' && isset($roles[$rol])) {
+            $query->where('rol', $rol);
+        }
+    }
 }

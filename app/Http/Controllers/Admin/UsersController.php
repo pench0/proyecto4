@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Session;
 class UsersController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-
-        $users = User::paginate();
-        return view('admin.users.index', compact('users'));
+        $users = User::name($request->get('name'))
+                        ->rol($request->get('rol'))
+                        ->paginate();
+        return view('admin.users.index', compact('users','request'));
 
     }
 
